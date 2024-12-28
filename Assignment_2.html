@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://freerangestock.com/sample/140598/pizza-on-dark-wood-background--with-copyspace.jpg'); /* replace with your pizza image URL */
+            background-size: cover;
+        }
+        .form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    float: right; /* Align the form container to the right */
+    margin-right: 20px; /* Adjust the margin for spacing from the right edge */
+}
+
+        h1 {
+            text-align:center;
+            color: #D35400;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .pizza-options {
+            margin-top: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #D35400;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #E67E22;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1> Pizza Delivery </h1>
+    <form>
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">*Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="town">*Town/City:</label>
+        <input type="text" id="town" name="town" required>
+
+        <label for="postcode">*Postcode:</label>
+        <input type="text" id="postcode" name="postcode" required>
+
+        <label for="tel">*Tel:</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <div class="pizza-options">
+            <label for="topping">*Topping:</label>
+            <input type="radio" id="margherita" name="topping" value="Margherita" required> Margherita
+            <input type="radio" id="four-seasons" name="topping" value="Four Seasons"> Four Seasons
+            <input type="radio" id="meat-feast" name="topping" value="Meat Feast"> Meat Feast
+        </div>
+
+        <div class="pizza-options">
+            <label for="size">*Size:</label>
+            <input type="radio" id="small" name="size" value="Small" required> Small
+            <input type="radio" id="medium" name="size" value="Medium"> Medium
+            <input type="radio" id="large" name="size" value="Large"> Large
+        </div>
+
+        <div class="pizza-options">
+            <label for="extras">Extras:</label>
+            <input type="checkbox" id="mushrooms" name="extras" value="Mushrooms"> Mushrooms
+            <input type="checkbox" id="green-peppers" name="extras" value="Green Peppers"> Green Peppers
+            <input type="checkbox" id="anchovies" name="extras" value="Anchovies"> Anchovies
+            <input type="checkbox" id="extra-cheese" name="extras" value="Extra Cheese"> Extra Cheese
+        </div>
+
+        <label for="delivery-time">Preferred delivery time:</label>
+        <input type="text" id="delivery-time" name="delivery-time">
+
+        <label for="delivery-instructions">Delivery instructions:</label>
+        <input type="text" id="delivery-instructions" name="delivery-instructions">
+
+        <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+</div>
+
+</body>
+</html>
